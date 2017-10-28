@@ -1,5 +1,5 @@
 var playlist = { fleetFoxes: 'Montezuma' }
 function updatePlaylist(object, artist, song) {
-  Object.assign(object, { artist: song })
+  Object.assign(object, { [artist]: song })
   return object
 }
